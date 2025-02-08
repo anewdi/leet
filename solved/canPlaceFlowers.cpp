@@ -1,10 +1,9 @@
 #include <iostream>
 #include <vector>
-using namespace std;
 
 class Solution {
 public:
-  bool canPlaceFlowers(vector<int> &flowerbed, int n) {
+  bool canPlaceFlowers(std::vector<int> &flowerbed, int n) {
     int amount = 0;
     int size = flowerbed.size();
 
@@ -40,6 +39,6 @@ public:
 
 int main() {
   Solution s1;
-  vector<int> flowerbed = {1, 0, 0, 0, 1};
-  cout << s1.canPlaceFlowers(flowerbed, 1);
+  std::vector<int> flowerbed = {1, 0, 0, 0, 1};
+  std::cout << s1.canPlaceFlowers(flowerbed, 1);
 }
