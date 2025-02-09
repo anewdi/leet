@@ -1,5 +1,6 @@
 with import <nixpkgs> { };
 mkShell {
+  hardeningDisable = [ "all" ];
   packages = [
     clang-tools
     gdb
